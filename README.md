@@ -36,6 +36,14 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
 ### Jawaban
 
+<img width="1440" alt="Screen Shot 2023-09-21 at 13 33 11" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/93d25fe5-a738-4214-9828-ab8b8840119d">
+
+Checksum adalah sebuah nilai numerik yang dihasilkan dari data yang digunakan untuk memeriksa integritas data tersebut. Checksum sangat berguna untuk memastikan keintegritasan data dalam berbagai situasi, termasuk pengiriman data melalui jaringan, penyimpanan data di perangkat penyimpanan, dan verifikasi integritas berkas yang diunduh dari internet. Lakukan pengecekan pada paket nomor 130, maka akan didapatkan checksum seperti gambar diatas.
+
+Berikut hasil percobaan pada terminal
+
+<img width="572" alt="Screen Shot 2023-09-21 at 13 33 51" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/74b93dc4-9056-492e-b1c5-1878a2d8f681">
+
 ### Kendala yang dialami
 
 ## Soal 5
@@ -59,6 +67,23 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 Berapa jumlah packet yang menuju IP 184.87.193.88?
 
 ### Jawaban
+
+
+Dalam konteks ip.dst == 184.87.193.88 memiliki penjabaran sebagai berikut :
+"ip" mengacu pada protokol IP (Internet Protocol).
+"dst" merupakan singkatan dari "destination" yang berarti alamat tujuan.
+"==" digunakan untuk membandingkan apakah alamat tujuan dari paket tersebut sama dengan "184.87.193.88."
+
+Dengan menggunakan konteks tersebut sebagai kueri filter, maka akan mendapatkan semua paket yang ditujukan ke alamat IP 184.87.193.88. 
+
+
+
+
+Maka didapatkan untuk jumlahnya ada sebanyak 6
+
+
+
+Beriku hasil percobaan pada terminal
 
 ### Kendala yang dialami
 
