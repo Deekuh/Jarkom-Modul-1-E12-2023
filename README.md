@@ -36,11 +36,15 @@ Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 
 ### Jawaban
 
+Untuk menyelesaikan permasalahan tersebut, dalam file yang telah dibuka pada wireshark maka lakukan pengecekan header pada paket nomor 130
+
 <img width="1440" alt="Screen Shot 2023-09-21 at 13 33 11" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/93d25fe5-a738-4214-9828-ab8b8840119d">
 
-Checksum adalah sebuah nilai numerik yang dihasilkan dari data yang digunakan untuk memeriksa integritas data tersebut. Checksum sangat berguna untuk memastikan keintegritasan data dalam berbagai situasi, termasuk pengiriman data melalui jaringan, penyimpanan data di perangkat penyimpanan, dan verifikasi integritas berkas yang diunduh dari internet. Lakukan pengecekan pada paket nomor 130, maka akan didapatkan checksum seperti gambar diatas.
+Didapatkan paket nomor 130 dengan beberapa rincian yang ada. Untuk melihat nilai checksum. Maka bisa dilihat lebih rinci pada 'User Datagram Protocol'. Checksum adalah sebuah nilai numerik yang dihasilkan dari data yang digunakan untuk memeriksa integritas data tersebut. Checksum sangat berguna untuk memastikan keintegritasan data dalam berbagai situasi, termasuk pengiriman data melalui jaringan, penyimpanan data di perangkat penyimpanan, dan verifikasi integritas berkas yang diunduh dari internet. Rincian data seperti berikut
 
-Berikut hasil percobaan pada terminal
+<img width="459" alt="Screen Shot 2023-09-21 at 13 33 11" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/36c72ae4-194b-4a96-a4a5-c0167ba90f89">
+
+Maka didapatkan untuk nilai checksum yang terdapat pada paket nomor 130 yakni 0x18e5. Berikut hasil percobaan pada terminal
 
 <img width="572" alt="Screen Shot 2023-09-21 at 13 33 51" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/74b93dc4-9056-492e-b1c5-1878a2d8f681">
 
@@ -68,22 +72,22 @@ Berapa jumlah packet yang menuju IP 184.87.193.88?
 
 ### Jawaban
 
+Untuk menyelesaikan permasalahan tersebut, dalam file yang telah dibuka pada wireshark maka lakukan filter menggunakan ip.dst == 184.87.193.88 seperti pada bukti berikut
 
-Dalam konteks ip.dst == 184.87.193.88 memiliki penjabaran sebagai berikut :
-"ip" mengacu pada protokol IP (Internet Protocol).
-"dst" merupakan singkatan dari "destination" yang berarti alamat tujuan.
-"==" digunakan untuk membandingkan apakah alamat tujuan dari paket tersebut sama dengan "184.87.193.88."
+<img width="1440" alt="Screen Shot 2023-09-21 at 13 43 23" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/6d4229de-5b33-4757-85af-80781eca26be">
+
+Dalam konteks ip.dst == 184.87.193.88 memiliki penjabaran yaitu :
+  - "ip" mengacu pada protokol IP (Internet Protocol).
+  - "dst" merupakan singkatan dari "destination" yang berarti alamat tujuan.
+  - "==" digunakan untuk membandingkan apakah alamat tujuan dari paket tersebut sama dengan "184.87.193.88."
 
 Dengan menggunakan konteks tersebut sebagai kueri filter, maka akan mendapatkan semua paket yang ditujukan ke alamat IP 184.87.193.88. 
 
+<img width="1440" alt="Screen Shot 2023-09-21 at 13 43 37" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/dcfef30e-efd1-4771-be30-06cbcabf3509">
 
+Dari hasil diatas, didapatkan jumlah paket yang ditujukan ke alamat IP 184.87.193.88 ada sebanyak 6. Berikut hasil percobaan pada terminal
 
-
-Maka didapatkan untuk jumlahnya ada sebanyak 6
-
-
-
-Beriku hasil percobaan pada terminal
+<img width="567" alt="Screen Shot 2023-09-21 at 13 44 06" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/4cd3b42b-d2a8-4494-9d8a-c8f1190cb528">
 
 ### Kendala yang dialami
 
