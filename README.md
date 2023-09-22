@@ -20,6 +20,8 @@ Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
 
 ### Jawaban
 
+Untuk menyelesaikan permasalahan tersebut, dalam file yang telah dibuka pada wireshark maka lakukan filter menggunakan query http, diperoleh server yang digunakan adalah gunicorn.
+
 ### Kendala yang dialami
 
 ## Soal 3
