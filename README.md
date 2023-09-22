@@ -52,6 +52,8 @@ Maka didapatkan untuk nilai checksum yang terdapat pada paket nomor 130 yakni 0x
 
 ### Kendala yang dialami
 
+Tidak ada, karena ketentuan nilai checksum tertera langsung pada paket nomor 130.
+
 ## Soal 5
 Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.
 - Berapa banyak packet yang berhasil di capture dari file pcap tersebut?
@@ -83,7 +85,7 @@ Dalam konteks ip.dst == 184.87.193.88 memiliki penjabaran yaitu :
   - "dst" merupakan singkatan dari "destination" yang berarti alamat tujuan.
   - "==" digunakan untuk membandingkan apakah alamat tujuan dari paket tersebut sama dengan "184.87.193.88."
 
-Dengan menggunakan konteks tersebut sebagai kueri filter, maka akan mendapatkan semua paket yang ditujukan ke alamat IP 184.87.193.88. 
+Dengan menggunakan konteks tersebut sebagai query filter, maka akan mendapatkan semua paket yang ditujukan ke alamat IP 184.87.193.88. 
 
 <img width="1440" alt="Screen Shot 2023-09-21 at 13 43 37" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/dcfef30e-efd1-4771-be30-06cbcabf3509">
 
@@ -92,6 +94,8 @@ Dari hasil diatas, didapatkan jumlah paket yang ditujukan ke alamat IP 184.87.19
 <img width="567" alt="Screen Shot 2023-09-21 at 13 44 06" src="https://github.com/Deekuh/Jarkom-Modul-1-E12-2023/assets/114421539/4cd3b42b-d2a8-4494-9d8a-c8f1190cb528">
 
 ### Kendala yang dialami
+
+Tidak ada, karena setelah kita filter menggunakan query pada file tersebut maka packet-packet yang menuju IP 184.87.193.88 akan ditampilkan dan akan langsung bisa menghitung jumlah packet yang menuju IP 184.87.193.88.
 
 ## Soal 8
 Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
